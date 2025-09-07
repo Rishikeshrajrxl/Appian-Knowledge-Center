@@ -13,3 +13,5 @@
 
 **Embedded Interfaces**
  - Embedded interfaces are one of the user experience options available in Appian, alongside Tempo, [sites](https://docs.appian.com/suite/help/25.3/Sites.html), and [portals](https://docs.appian.com/suite/help/25.3/portal-object.html). Embedded interfaces allow Appian interfaces to be embedded in external web pages. This lets users interact with Appian forms and interfaces directly within those external pages, without navigating to a distinct Appian environment like a site. In fact, users may not even realize they are interacting with an Appian-powered interface, especially if a custom [theme](https://docs.appian.com/suite/help/25.3/Themes_for_Embedded_Interfaces.html) is applied.
+
+

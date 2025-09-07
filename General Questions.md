@@ -47,3 +47,17 @@
 
 **Default alert goes to which users**
  - By default, alerts are automatically sent to process administrators, process model administrators, and system administrators.
+
+**Case: Two different UITs with different assignees**
+ - If two chained UIs are assigned to different users, the chain will break after the first UI. The next UI will be generated as a separate task for the second user, and they’ll need to open it from their task list(or receive it via email/task assignment).
+
+**How can we configure the process that can be trigger from email**
+1. Parsing the details of the email
+	 - Inside the Data -> New mapping section use the **msg!properties** domain and **msg!body** domain to map the email metadata.
+2. Allowing the process model to receive emails
+	 - Once you have parsed the email contents, now it is time to allow the Process Model to receive these emails. It can be done simply by checking a box in the process properties.
+	 - **Check right Public Events**, which Allow anyone to fire triggers.
+3. Constructing the email ID
+	 - Now comes the final part, to construct the email ID to which these emails will be sent. For that, you will need to copy the UUID of the process model and paste it in below text along with the URL of your Appian environment.
+	 - ==**processmodeluuid<uuid>@yourappianenvironment.appiancloud.com.==
+		 Example: processmodeluuid0006e543-b132-8000-01f5-7f0000014e7a@appianspace.appiancloud.com
