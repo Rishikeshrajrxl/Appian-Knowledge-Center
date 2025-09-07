@@ -59,5 +59,24 @@
 	 - **Check right Public Events**, which Allow anyone to fire triggers.
 3. Constructing the email ID
 	 - Now comes the final part, to construct the email ID to which these emails will be sent. For that, you will need to copy the UUID of the process model and paste it in below text along with the URL of your Appian environment.
-	 - ==**processmodeluuid<uuid>@yourappianenvironment.appiancloud.com.==
-		 Example: processmodeluuid0006e543-b132-8000-01f5-7f0000014e7a@appianspace.appiancloud.com
+	 - processmodeluuiduuid@yourappianenvironment.appiancloud.com
+		 Example: processmodeluuid0006e543-b132-8000-01f5-7f0000014e7a@appianspace.appiancloud.com.
+
+**What is the main difference between dictionary and map in Appian?**
+- Normally, if Appian needs to store a mix of types, it wraps them in ==**Variants**, like in Dictionary==.
+- But with **Maps (`a!map()`)**, Appian stores the values **directly**, _without extra wrapping_.
+- This makes maps more efficient and easier to handle when interacting with **APIs / JSON**.
+- - In a **Dictionary/Typed CDT**, Appian might internally wrap these as `Variant(Text)`, `Variant(Integer)`, etc.
+- In a **Map**, they’re stored as raw values → `"Ravi"`, `29`, `true`, `2025-09-05`.
+
+
+**Is there any other way we can type cast the integer value without using tointeger()**
+ - `cast( 'type!{http://www.appian.com/ae/types/2009}Integer', "12" )`
+
+**what will happen on Deleting a process instance?**
+ - Deleting a process will also delete any synchronous subprocesses and pending tasks associated with those subprocesses. Processes and pending tasks started with the Start Process smart service will not be deleted automatically, but you can select and delete them if required.
+
+**How to display archived process to user**
+ - Leverage the Process Activity tab in the Monitor view to allow users with appropriate permissions to see the history of archived processes for auditing
+ - select a archived instance, click on unarchive, it will be visible in the completed instance. Or we can also see the History of the process variables.
+ 

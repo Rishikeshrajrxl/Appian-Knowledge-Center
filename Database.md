@@ -41,4 +41,4 @@
 	- `CREATE MATERIALIZED VIEW active_employees_mv AS SELECT emp_id, emp_name, department FROM employees WHERE status = 'Active';`
 
 
-		   
+   
