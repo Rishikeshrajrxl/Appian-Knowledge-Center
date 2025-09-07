@@ -80,3 +80,4 @@
  - Leverage the Process Activity tab in the Monitor view to allow users with appropriate permissions to see the history of archived processes for auditing
  - select a archived instance, click on unarchive, it will be visible in the completed instance. Or we can also see the History of the process variables.
  
+ **How to display 40-80k excel rows to the user with performant way?**
