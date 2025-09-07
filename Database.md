@@ -15,11 +15,11 @@
 
 **When will you use View, Stored Procedure in Appian.**
 1. Database Views in Appian
-	- You want to combine/join multiple tables and expose them as a single data source in Appian.
+	- You want to **==combine/join multiple tables==** and expose them as a single data source in Appian.
 	- You need to simplify complex queries so Appian can just read from the view.
 	- You want to standardize business logic at the database level (e.g., “active employees with latest status”).
 2. Stored Procedures in Appian
-	- You need to perform multiple operations (insert, update, delete) in one go.
+	- You need to **==perform multiple operations (insert, update, delete) in one go==**.
 	- For bulk data processing (faster than looping in Appian).
 	- When there is complex business logic that is easier/more efficient in SQL than in Appian expressions
 	 

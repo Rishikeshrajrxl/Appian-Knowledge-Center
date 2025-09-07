@@ -35,16 +35,6 @@
 **How can I move forward a parent process based on the value changed in the second node of Subprocess.**
  - By Pass by reference
 
-**Sources of Record**
- *  The source of a record is defined either through the **Data Source Management** settings in the Admin Console or by creating **Connected Systems**, after which it becomes available in Appian record as a data source.
-
-**What comes after selecting different type of sync when creating record**
-1. Incase of **Sync record**
-	  - It asked to **choose Database table**.
-2. Incase of **disable sync record**
-	 - It is asked to **choose Data Store and Entity.**
-	 - Therefore, creating a sync record we need to first create a datastore and its entity.
-
 **Default alert goes to which users**
  - By default, alerts are automatically sent to process administrators, process model administrators, and system administrators.
 
